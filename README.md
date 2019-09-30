@@ -10,6 +10,7 @@ HolyMoly helps developer manage their SSH Tunnels
 
 <!-- toc -->
 * [Description](#description)
+* [Motivation](#motivation)
 * [Usage](#usage)
 * [Configuration](#configuration)
 <!-- tocstop -->
