@@ -14,7 +14,6 @@ export default class TunnelManager {
       throw new Error('Invalid config file format')
     }
     
-
     const db = new Database(stateDDBPath)
     db.serialize(() => {
       db.run("CREATE TABLE IF NOT EXISTS state (tunnel VARCHAR(255), pid INT, command VARCHAR(255), target VARCHAR(255), PRIMARY KEY (tunnel))");

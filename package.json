@@ -1,7 +1,7 @@
 {
   "name": "holymoly",
   "description": "HolyMoly is a cli SSH tunnel manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Alexandre Mathieu",
   "bin": {
     "holymoly": "./bin/run"
@@ -48,7 +48,10 @@
     "bin": "holymoly",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "hooks": {
+      "init": "./lib/hooks/init/createDir"
+    }
   },
   "repository": "misc/holymoly",
   "scripts": {
