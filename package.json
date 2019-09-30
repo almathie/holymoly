@@ -1,0 +1,62 @@
+{
+  "name": "holymoly",
+  "description": "HolyMoly is a cli SSH tunnel manager",
+  "version": "0.0.1",
+  "author": "Alexandre Mathieu",
+  "bin": {
+    "holymoly": "./bin/run"
+  },
+  "bugs": "https://github.com/misc/holymoly/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/easy-table": "^0.0.32",
+    "@types/sqlite3": "^3.1.5",
+    "cli-ux": "^5.3.2",
+    "easy-table": "^1.1.1",
+    "find-process": "^1.4.2",
+    "sqlite3": "^4.1.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/tslint": "^3",
+    "@types/node": "^10",
+    "globby": "^10",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/misc/holymoly",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "holymoly",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "misc/holymoly",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
