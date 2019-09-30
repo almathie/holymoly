@@ -1,7 +1,7 @@
 {
   "name": "holymoly",
   "description": "HolyMoly is a cli SSH tunnel manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Alexandre Mathieu",
   "bin": {
     "holymoly": "./bin/run"

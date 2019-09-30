@@ -1,7 +1,7 @@
 HolyMoly Tunnel Manager
 =======================
 
-HolyMoly is a cli SSH tunnel manager
+HolyMoly helps developer manage their SSH Tunnels
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/holymoly.svg)](https://npmjs.org/package/holymoly)
@@ -21,7 +21,6 @@ This is a cli tunnel manager. HolyMoly allows you to define ssh tunnels in a con
 When working with multiple developement / test environments it can be cumbersome to relaunch each microservice with a different configuration when targeting a different environment. One solution is to setup your microservice with a single static sharable configuration that targets SSH tunnels. The output of each tunnel defines which environement is used by the microservice.
 
 # Usage
-<!-- usage -->
 ```sh-session
 $ npm install -g holymoly
 
@@ -55,7 +54,6 @@ ID  Tunnel               Target
 1   tunnel-1             CLOSED
 2   tunnel-2             staging
 ```
-<!-- usagestop -->
 
 # Configuration
 <!-- configration -->
